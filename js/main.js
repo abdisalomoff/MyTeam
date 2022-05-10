@@ -4,6 +4,6 @@ var menuNavbar = document.querySelector('.navbar')
 menuBtn.addEventListener('click', function(){
     menuBtn.classList.toggle("navbar--open")
     // menuBtn.classList.toggle("header-btn--open");
-    // menuBtn.classList.toggle("navbar-open__x");
+    // menuBtn.classList.toggle("navbar--open__x");
     
 })
