@@ -1,0 +1,206 @@
+.hero-about {
+  width: 100vw;
+  background-color: #012f34;
+  background-image: url("../../images/hero-about-bg-img.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 224px;
+  background-position: calc(50% + 670px) bottom;
+}
+
+.hero-about-inner {
+  display: flex;
+  align-items: center;
+}
+
+.hero-about__left {
+  padding: 140px 0px 342px;
+  width: 100%;
+  max-width: 445px;
+}
+
+.hero-about__line {
+  width: 50px;
+  height: 4px;
+  background-color: #f67e7e;
+}
+
+.hero-about__tittle {
+  margin: 54px 0px 0px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.hero-about__right {
+  padding: 198px 0px 140px;
+  margin-left: 220px;
+  width: 100%;
+  max-width: 445px;
+}
+
+.hero-about__item {
+  position: relative;
+  margin-top: 32px;
+
+  &:nth-child(1)::before {
+    position: absolute;
+    top: 0px;
+    left: -95px;
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../../images/hero-about-bgi1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &:nth-child(2)::before {
+    position: absolute;
+    top: 0px;
+    left: -95px;
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../../images/hero-about-bgi2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &:nth-child(3)::before {
+    position: absolute;
+    top: 0px;
+    left: -95px;
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../../images/hero-about-bgi3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.hero-about__subject {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+
+.hero-about__text {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@include max-width(768px) {
+  .hero-about {
+    background-position: calc( 50% + 387px ) top;
+  }
+
+  .hero-about-inner {
+    padding: 100px 58px;
+    flex-direction: column;
+  }
+
+  .hero-about__left {
+    width: 100%;
+    max-width: 445px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .hero-about__tittle {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .hero-about__right {
+    width: 100%;
+    max-width: 478px;
+    padding: 0;
+    padding-left: 98px;
+    margin: 32px 0px 0px;
+    margin-right: auto;
+  }
+}
+
+@include max-width(576px){
+    .hero-about {
+        background-position: calc( 50% + 288px ) top;
+      }
+    .hero-about-inner{
+        // padding: 64px 0;
+        margin: 0;
+    }
+
+    .hero-about__left{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+    }
+
+    .hero-about__right{
+        padding: 0;
+        margin-top: 9px;
+    }
+
+    .hero-about__item {
+        position: relative;
+        margin-top: 136px;
+        text-align: center;
+      
+        &:nth-child(1)::before {
+          position: absolute;
+          top: -88px;
+          left: calc( 50% - 35px );
+          width: 72px;
+          height: 72px;
+          display: block;
+          background-image: url("../../images/hero-about-bgi1.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+        }
+      
+        &:nth-child(2)::before {
+          position: absolute;
+          top: -88px;
+          left: calc( 50% - 35px );
+          width: 72px;
+          height: 72px;
+          display: block;
+          background-image: url("../../images/hero-about-bgi2.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+        }
+      
+        &:nth-child(3)::before {
+          position: absolute;
+          top: -88px;
+          left: calc( 50% - 35px );
+          width: 72px;
+          height: 72px;
+          display: block;
+          background-image: url("../../images/hero-about-bgi3.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+        }
+      }
+}
+
+@include max-width(375px){
+    .hero-about{
+        background-position: calc( 50% + 187px ) top;
+    }
+}

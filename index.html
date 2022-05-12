@@ -7,6 +7,7 @@
     <title>MyTeam</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="container">
@@ -20,18 +21,18 @@
               alt="site logo"
             />
           </a>
-          <nav class="navbar">
-            <img class="navbar--open__x" src="./images/x-icon.svg" alt="x-icon" />
-            <ol class="navbar-list">
-              <li class="navbar-item">
-                <a class="navbar-link" href="#">home</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#">about</a>
-              </li>
-            </ol>
-          </nav>
-          <a class="header-btn header-btn--open" href="#">contact us</a>
+          <!-- <img class="navbar--open__x" src="./images/x-icon.svg" alt="x-icon" /> -->
+          <ol class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">about</a>
+            </li>
+            <li class="navbar-item">
+              <a class="header-link header-link--btn" href="#">contact us</a>
+            </li>
+          </ol>
           <button class="site-header__burger-btn">&#9776;</button>
         </div>
       </div>
@@ -40,16 +41,14 @@
       <section class="hero">
         <div class="container">
           <div class="hero-inner">
-            <h1 class="hero-inner__tittle">
-              Find the <br />
-              best <span class="hero-inner__color">talent</span>
-            </h1>
+            <div class="hero-inner__box">
+              <h1 class="hero-inner__tittle">
+                Find the <br />
+                best <span class="hero-inner__color">talent</span>
+              </h1>
+            </div>
             <div class="hero-inner__info">
-              <img
-                class="hero-inner__liner"
-                src="./images/line.svg"
-                alt="line"
-              />
+              <div class="hero-inner__liner"></div>
               <p class="hero-inner__text">
                 Finding the right people and building high performing teams can
                 be hard. Most companies aren’t tapping into the abundance of
@@ -59,6 +58,86 @@
           </div>
         </div>
       </section>
+
+      <section class="hero-about">
+        <div class="container">
+          <div class="hero-about-inner">
+            <div class="hero-about__left">
+              <div class="hero-about__line"></div>
+              <h2 class="hero-about__tittle">
+                Build & manage distributed teams like no one else.
+              </h2>
+            </div>
+            <div class="hero-about__right">
+              <ol class="hero-about__list">
+                <li class="hero-about__item">
+                  <strong class="hero-about__subject"
+                    >Experienced Individuals</strong
+                  >
+                  <p class="hero-about__text">
+                    Our network is made up of highly experienced professionals
+                    who are passionate about what they do.
+                  </p>
+                </li>
+                <li class="hero-about__item">
+                  <strong class="hero-about__subject">Easy to Implement</strong>
+                  <p class="hero-about__text">
+                    Our processes have been refined over years of implementation
+                    meaning our teams always deliver.
+                  </p>
+                </li>
+                <li class="hero-about__item">
+                  <strong class="hero-about__subject"
+                    >Enhanced Productivity</strong
+                  >
+                  <p class="hero-about__text">
+                    Our customized platform with in-built analytics helps you
+                    manage your distributed teams.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-content">
+        <div class="container">
+          <div class="hero-content__inner">
+            <div class="hero-content__heading">
+              <h3 class="hero-content__tittle">
+                Delivering real results for top companies. Some of our <span class="hero-content__color"> success stories.</span>
+              </h3>
+            </div>
+            <ol class="hero-content__list">
+              <li class="hero-content__item">
+                <p class="hero-content__text">
+                  “The team perfectly fit the specialized skill set required.
+                  They focused on the most essential features helping us launch
+                  the platform eight months faster than planned.”
+                </p>
+                <strong class="hero-content__subject">Kady Baker</strong>
+                <p class="hero-content__info">Product Manager at Bookmark</p>
+              </li>
+              <li class="hero-content__item">
+                <p class="hero-content__text">
+                  “We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”
+                </p>
+                <strong class="hero-content__subject">Aiysha Reese</strong>
+                <p class="hero-content__info">Founder of Manage</p>
+              </li>
+              <li class="hero-content__item">
+                <p class="hero-content__text">
+                  “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”
+                </p>
+                <strong class="hero-content__subject">Arthur Clarke</strong>
+                <p class="hero-content__info">Co-founder of MyPhysio</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
     </main>
     <script src="./js/main.js"></script>
   </body>

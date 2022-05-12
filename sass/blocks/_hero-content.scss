@@ -1,0 +1,207 @@
+.hero-content {
+  width: 100vw;
+  background-color: #004047;
+  background-image: url("../../images/hero-content-bgi1.svg"),
+    url("../../images/hero-content-bgi2.svg");
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 200px;
+  background-blend-mode: normal, overlay;
+  background-position: calc(50% - 610px) top, calc(50% + 565px) bottom;
+}
+
+.hero-content__tittle {
+  width: 100%;
+  max-width: 932px;
+  padding: 140px 0px 93px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content__color {
+  color: #a2e2e1;
+}
+
+.hero-content__list {
+  width: 100%;
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 245px;
+}
+
+.hero-content__item {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    width: 67px;
+    height: 56px;
+    display: block;
+    background-image: url("../../images/tutuq-belgi-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    content: "";
+  }
+
+  &:nth-child(1)::before {
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 30px);
+    width: 62px;
+    height: 62px;
+    display: block;
+    background-image: url("../../images/hero-content-img1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &:nth-child(2)::before {
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 30px);
+    width: 62px;
+    height: 62px;
+    display: block;
+    background-image: url("../../images/hero-content-img2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &:nth-child(3)::before {
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 30px);
+    width: 62px;
+    height: 62px;
+    display: block;
+    background-image: url("../../images/hero-content-img3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.hero-content__text {
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.hero-content__subject {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+}
+
+.hero-content__info {
+  margin-top: 2px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@include max-width(768px) {
+  .hero-content {
+    background-position: calc(50% - 310px) top, calc(50% + 285px) bottom;
+  }
+
+  .hero-content__inner {
+    padding: 0px 57px 178px;
+  }
+
+  .hero-content__tittle {
+    padding: 100px 0px 84px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .hero-content__list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .hero-content__item + .hero-content__item {
+    margin-top: 162px;
+  }
+}
+
+@include max-width(416px) {
+  .hero-content__item {
+    &:nth-child(1)::before {
+      top: 240px;
+    }
+    &:nth-child(2)::before {
+      top: 240px;
+    }
+    &:nth-child(3)::before {
+      top: 240px;
+    }
+  }
+}
+
+@include max-width(375px) {
+    .hero-content {
+        background-position: calc(50% - 310px) top, calc(50% + 85px) bottom;
+      }
+
+  .hero-content__item {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+
+    &::after {
+
+    &:nth-child(1)::before {
+      top: 204px;
+    }
+
+    &:nth-child(2)::before {
+      top: 204px;
+    }
+
+    &:nth-child(3)::before {
+      top: 204px;
+      padding-bottom: 242px;
+    }
+  }
+
+  .hero-content__inner {
+    padding-bottom: 242px;
+  }
+
+  .hero-content__heading {
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .hero-content__tittle {
+    padding: 140px 0px 84px;
+  }
+}
+
