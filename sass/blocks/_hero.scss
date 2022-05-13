@@ -4,7 +4,6 @@
   background-image: url("../../images/hero-bg-img-firt.svg"),
     url("../../images/hero-bg-img-second.svg");
   background-repeat: no-repeat;
-  background-size: 200px, 358px 200px;
   background-position: calc(50% - 685px) 50px, calc(50% + 420px) bottom;
 }
 
@@ -38,6 +37,7 @@
 
 .hero-inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 56px 0px 246px;
 }
@@ -81,7 +81,7 @@
     background-image: url("../../images/hero-bg-img-second.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 358px 200px;
+    // background-size: 358px 200px;
   }
 
   .hero-inner {
@@ -123,7 +123,7 @@
     background-image: url("../../images/hero-bg-img-second.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 358px 200px;
+    // background-size: 358px 200px;
   }
 }
 
