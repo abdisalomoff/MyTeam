@@ -1,5 +1,4 @@
 .hero-content {
-  width: 100vw;
   background-color: #004047;
   background-image: url("../../images/hero-content-bgi1.svg"),
     url("../../images/hero-content-bgi2.svg");
@@ -164,13 +163,13 @@
 }
 
 @include max-width(375px) {
-    .hero-content {
-        background-position: left top, right bottom;
-      }
+  .hero-content {
+    background-position: left top, right bottom;
+  }
 
-      .hero-content__inner{
-          padding: 0;
-      }
+  .hero-content__inner {
+    padding: 0;
+  }
 
   .hero-content__item {
     position: relative;
@@ -179,8 +178,7 @@
     text-align: center;
   }
 
-    &::after {
-
+  &::after {
     &:nth-child(1)::before {
       top: 204px;
     }
@@ -208,4 +206,3 @@
     padding: 140px 0px 84px;
   }
 }
-
