@@ -1,0 +1,165 @@
+.footer {
+  background-color: #002529;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+    padding: 48px 0px;
+    margin: 0 auto;
+  }
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.footer-left__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-items {
+  display: flex;
+  margin-top: 25px;
+
+  &__item + .left-items__item {
+    margin-left: 40px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  &__link:hover {
+    color: #f67e7e;
+  }
+}
+
+.left-about {
+  width: 100%;
+  max-width: 164px;
+  margin-left: 125px;
+  &__item + .left-about__item {
+    margin-top: 5px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+}
+
+.footer-right {
+  width: 100%;
+  max-width: 255px;
+}
+
+.right-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 104px;
+  margin-left: auto;
+
+  &__link {
+    color: #ffffff;
+  }
+
+  &__link:hover {
+    color: #f67e7e;
+  }
+}
+
+.right-text {
+  display: block;
+  margin-top: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+@include max-width(768px) {
+  .footer-inner {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 689px;
+    padding: 56px 0px;
+    margin: 0 auto;
+  }
+
+  .footer-left {
+    width: 100%;
+    max-width: 689px;
+    justify-content: space-between;
+  }
+
+  .left-about{
+      margin: 0;
+  }
+
+  .footer-right{
+    width: 100%;
+    max-width: 689px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+  }
+
+  .right-icons{
+      margin: 0;
+  }
+
+  .right-text{
+      margin: 0;
+  }
+}
+
+@include max-width(576px){
+    .footer-left{
+        flex-direction: column;
+    }
+
+    .left-items{
+       justify-content: space-between;
+    }
+
+    .left-items__item + .left-items__item {
+        margin-left: 24px;
+      }
+
+    .left-about{
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .footer-right{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .right-text{
+        margin-top: 16px;
+    }
+}
