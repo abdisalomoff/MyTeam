@@ -5,12 +5,16 @@
   background-repeat: no-repeat;
   background-size: 147px 100px, 200px 100px;
   background-position: calc(50% - 610px) top, calc(50% + 575px) bottom;
+
+&__inner{
+  padding: 140px 0 245px;
+}
 }
 
 .hero-content__tittle {
   width: 100%;
   max-width: 932px;
-  padding: 140px 0px 93px;
+  // padding: 140px 0px 93px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 48px;
@@ -29,7 +33,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 0px 245px;
+  margin-top: 92px;
+  // padding: 0px 0px 245px;
 }
 
 .hero-content__item {
@@ -127,12 +132,14 @@
   }
 
   .hero-content__inner {
-    padding: 0px 57px 178px;
+    padding: 100px 0px 178px;
   }
 
   .hero-content__tittle {
-    padding: 100px 0px 84px;
-    margin: 0;
+    // padding: 100px 0px 84px;
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
     font-size: 32px;
     line-height: 32px;
   }

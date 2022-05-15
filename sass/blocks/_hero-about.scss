@@ -110,8 +110,15 @@
     background-position: calc(50% + 387px) top;
   }
 
+  .hero-about__line {
+    display: inline;
+  }
+
   .hero-about-inner {
-    padding: 100px 58px;
+    width: 100%;
+    max-width: 573px;
+    padding: 100px 0px;
+    margin: 0 auto;
     flex-direction: column;
   }
 
@@ -124,16 +131,16 @@
   }
 
   .hero-about__tittle {
+    margin: 0;
     font-size: 32px;
     line-height: 32px;
   }
 
   .hero-about__right {
     width: 100%;
-    max-width: 478px;
     padding: 0;
     padding-left: 98px;
-    margin: 32px 0px 0px;
+    margin: 64px 0px 0px;
     margin-right: auto;
   }
 }
